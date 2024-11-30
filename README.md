@@ -1,4 +1,4 @@
-#**Work Studio Website Clone (In Progress)**#
+# **Work Studio Website Clone (In Progress)**
 
 A responsive and interactive clone of a professional work studio website. This project showcases the use of modern web technologies and animations to create a visually appealing design.
 Technologies Used
