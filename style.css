@@ -9,6 +9,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #loader {
   position: fixed;
   display: flex;
@@ -20,6 +24,7 @@ html {
   color: white;
   text-align: center;
   z-index: 999;
+  display: none;
 }
 
 #loader h1 {
@@ -62,7 +67,7 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 25px 70px;
+  padding: 15px 10px;
   z-index: 1;
 }
 
@@ -285,7 +290,7 @@ html {
 
 .elem:hover h2 {
   font-style: italic;
-  color: rgb(57, 54, 54);
+  color: rgb(212, 13, 13);
 }
 
 #page2 {
@@ -300,8 +305,8 @@ html {
 }
 
 .image-container {
-  padding: 30px;
-  columns: 400px;
+  padding: 30px 10px;
+  columns: 3 400px;
 }
 
 .image-div {
@@ -317,6 +322,7 @@ html {
   height: 100%;
   width: 100%;
   opacity: 0;
+  display: none;
 }
 
 .image-div .thumbnail {
@@ -399,16 +405,16 @@ html {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 3vw;
+  gap: 2.9vw;
   justify-content: center;
   align-items: center;
 }
 
 .contactUs p {
-  font-size: 3.8rem;
+  font-size: 3.9rem;
   text-align: center;
-  font-weight: 10;
-  line-height: 2.8vw;
+  font-weight: 1;
+  line-height: 2.65vw;
 }
 
 .contactUs button {
@@ -430,8 +436,68 @@ html {
 
 .footer {
   background-color: #f5e41b;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
 }
 
-.footer_logo_container svg {
-  height: 10px;
+.footer_logo_container p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 0.125rem;
+}
+
+.same_footer_social p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 0.125rem;
+}
+
+.footer_socials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.footer_email {
+  width: 100%;
+  grid-column: 1/4;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.footer_email input {
+  height: 100%;
+  background-color: transparent;
+  width: 90%;
+  border: none;
+  outline: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  border-bottom: 1.25px solid black;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.footer_send_button {
+  height: 100%;
+  width: 10%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f5e41b;
+  border: none;
+  border-bottom: 1.25px solid black;
+  display: flex;
+  justify-content: end;
+}
+
+.footer_send_button svg {
+  height: 70%;
 }
