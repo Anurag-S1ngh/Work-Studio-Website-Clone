@@ -179,3 +179,13 @@ const navAnimation3 = gsap.to('.nav_container i', {
         scrub: 2,
     }
 });
+
+setInterval(() => {
+    const newYorkTime = new Date().toLocaleString("en-US", {
+        timeZone: "America/New_York",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: true
+    });
+    document.querySelector('.time').innerHTML = newYorkTime;
+}, 1000);
