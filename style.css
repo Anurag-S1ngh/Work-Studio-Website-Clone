@@ -24,7 +24,6 @@ body {
   color: white;
   text-align: center;
   z-index: 999;
-  display: none;
 }
 
 #loader h1 {
@@ -322,7 +321,6 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  display: none;
 }
 
 .image-div .thumbnail {
