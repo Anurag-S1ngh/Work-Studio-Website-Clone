@@ -305,14 +305,21 @@ body {
 
 .image-container {
   padding: 30px 10px;
-  columns: 3 400px;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.image-column-1,
+.image-column-2,
+.image-column-3 {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
 }
 
 .image-div {
   position: relative;
   margin-bottom: 1rem;
-  top: 0;
-  left: 0;
 }
 
 .image-div .overlay {
@@ -326,7 +333,7 @@ body {
 .image-div .thumbnail {
   position: absolute;
   transition: all 0.1s ease;
-  object-fit: cover;
+  object-fit: cover !important;
   height: 100%;
   width: 100%;
 }
@@ -339,29 +346,29 @@ body {
   opacity: 1;
 }
 
-.image-container .image-div:nth-child(1) {
+.image-column-1 .image-div:nth-child(1) {
   height: 40vw;
   background-color: #fff;
 }
 
-.image-container .image-div:nth-child(3) {
-  height: 30vw;
+.image-column-1 .image-div:nth-child(2) {
+  height: 33vw;
 }
 
-.image-container .image-div:nth-child(5) {
-  height: 50vw;
-}
-
-.image-container .image-div:nth-child(2) {
+.image-column-2 .image-div:nth-child(1) {
   height: 35vw;
 }
 
-.image-container .image-div:nth-child(4) {
+.image-column-2 .image-div:nth-child(2) {
+  height: 50vw;
+}
+
+.image-column-3 .image-div:nth-child(1) {
   height: 45vw;
 }
 
-.image-container .image-div:nth-child(6) {
-  height: 25vw;
+.image-column-3 .image-div:nth-child(2) {
+  height: 28vw;
 }
 
 #backToTop {
@@ -411,8 +418,8 @@ body {
 .contactUs p {
   font-size: 3.9rem;
   text-align: center;
-  font-weight: 1;
-  line-height: 2.65vw;
+  font-weight: 100;
+  line-height: 2.75rem;
 }
 
 .contactUs button {
@@ -497,5 +504,42 @@ input::placeholder {
 }
 
 .footer_send_button svg {
-  height: 70%;
+  height: 65%;
+}
+
+@media screen and (max-width: 769px) {
+  #nav svg {
+    height: 0.75rem;
+  }
+  .nav_container a span {
+    font-size: 0.9rem;
+  }
+  .nav_container i {
+    font-size: 0.9rem;
+  }
+  .contactUs p {
+    font-size: 2.25rem;
+    line-height: 1.6rem;
+  }
+  .contactUs button {
+    font-size: 0.75rem;
+    padding: 3px 9px;
+  }
+  .footer_logo_container p {
+    font-size: 0.8rem;
+  }
+  .same_footer_social p {
+    font-size: 0.8rem;
+  }
+  .footer_email input {
+    font-size: 0.8rem;
+  }
+
+  #backToTop h3 {
+    font-size: 0.8rem;
+  }
+
+  #backToTop h3 i {
+    animation: up 0.8s ease-in-out infinite alternate;
+  }
 }
