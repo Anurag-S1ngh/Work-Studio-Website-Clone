@@ -24,7 +24,6 @@ body {
   color: white;
   text-align: center;
   z-index: 999;
-  display: none;
 }
 
 #loader h1 {
@@ -329,7 +328,6 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  display: none;
 }
 
 .image-div .thumbnail {
@@ -340,9 +338,9 @@ body {
   width: 100%;
 }
 
-/* .image-div:hover .thumbnail {
+.image-div:hover .thumbnail {
   opacity: 0;
-} */
+}
 
 .image-div:hover .overlay {
   opacity: 1;
