@@ -491,7 +491,7 @@ input::placeholder {
 }
 
 .footer_send_button {
-  height: 83%;
+  height: 99%;
   width: 10%;
   position: absolute;
   right: 0;
@@ -504,10 +504,13 @@ input::placeholder {
 }
 
 .footer_send_button svg {
-  height: 65%;
+  height: 70%;
 }
 
 @media screen and (max-width: 769px) {
+  .footer_send_button {
+    height: 20px;
+  }
   #page1 h1 {
     font-size: 2.5rem;
     font-weight: 200;
